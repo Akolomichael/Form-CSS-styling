@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title> <mark> Registration Form </mark></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>User Registration Form</h1>
+  </header>
+
+  <main>
+    <form>
+
+      <fieldset>
+        <legend id="personal">Personal information</legend>
+
+        <p>
+          <label for="firstName">First Name: </label>
+          <input type="text" id="firstName" name="firstName" />
+        </p>
+
+        <p>
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" />
+        </p>
+
+        <p>
+          <label for="age">  Age:    </label>
+          <input type="number" id="age" name="age" />
+        </p>
+
+        <p>
+          <label for="gender">Gender:</label>
+          <label>
+          <input type="radio" id="genderMale" name="gender" value="male" />
+          Male  
+          </label>
+          <label>
+            <input type="radio" id="genderFemale" name="gender" value="female" />
+            Female
+          </label>
+
+        </p>
+
+        <p>
+          <label for="profilePhoto">Profile Photo:</label>
+          <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*" />
+        </p>
+      </fieldset>
+
+  </main>
+  </section>
+  <fieldset>
+    <legend>Contact Address and Information</legend>
+
+    <p>
+      <label for="email">Email:</label>
+      <input type="email" id="email " name="email" />
+    </p>
+
+    <p>
+      <label for="phone number">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" />
+    </p>
+    <p>
+      <label for="personal website">Personal Website</label>
+      <input type="url" id="website" name="website" placeholder="https://example.com" />
+    </p>
+    <p>
+      <label for="streetAddress">Street Address:</label>
+      <input type="text" id="streetAddress" name="streetAddress" />
+    </p>
+
+    <p>
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" />
+    </p>
+
+ <p>
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="">Select Country</option>
+        <option value="kenya">Kenya</option>
+        <option value="uganda">Uganda</option>
+        <option value="tanzania">Tanzania</option>
+        <option value="other">Other</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="postal">ZIP/Postal Code:</label>
+      <input type="text" id="postal" name="postal" />
+    </p>
+
+    <p>
+      <label for="contactTime">Preferred Contact Time:</label>
+      <input type="time" id="contactTime" name="contactTime" />
+    </p>
+  </fieldset>
+  </section>
+
+    <fieldset>
+      <legend>Preferences & Interests</legend>
+
+      <p>
+        <label for="favColor">Favorite Color:</label>
+        <input type="color" id="favColor" name="favColor" value="#ff0000" />
+      </p>
+
+      <p>
+        <label for="experience">Experience Level (1-10):</label>
+        <input type="range" id="experience" name="experience" min="1" max="10" value="5" />
+      </p>
+
+      <p>
+        <label for="birthMonth">Birth Month:</label>
+        <input type="month" id="birthMonth" name="birthMonth" />
+      </p>
+
+      <p>
+        <label for="availableWeek">Available Week:</label>
+        <input type="week" id="availableWeek" name="availableWeek" />
+      </p>
+
+      <p>
+        <label for="keywords">Search Keywords:</label>
+        <input type="search" id="keywords" name="keywords" placeholder="Enter keywords..." />
+      </p>
+  <label>Interests (Select all that apply)</label>
+  <label><input type="checkbox" name="interests" value="technology" /> Technology</label>
+  <label><input type="checkbox" name="interests" value="sports" /> Sports</label>
+  <label><input type="checkbox" name="interests" value="music" /> Music</label>
+  <label><input type="checkbox" name="interests" value="travel" /> Travel</label>
+  <label><input type="checkbox" name="interests" value="reading" /> Reading</label>
+  <label><input type="checkbox" name="interests" value="cooking" /> Cooking</label>
+      <label for="education">Education Level:</label>
+<select id="education" name="education">
+  <option value="">-- Select Education Level --</option>
+  <option value="primary">Primary School</option>
+  <option value="secondary">Secondary School</option>
+  <option value="diploma">Diploma</option>
+  <option value="bachelor">Bachelor's Degree</option>
+  <option value="masters">Master's Degree</option>
+  <option value="phd">PhD</option>
+  </select>
+<br>
+<p>
+  <label for="password">  Create Password: </label>
+  <input type="password" id="password" name="password" required />
+</p> 
+<p>
+
+<label for="confirm password"> Confirm Password </label>
+<input type="password" id="password" name="password" required/>
+</p>
+
+
+
+
+
+    </fieldset>
+  </section>
+
+  
+   <fieldset>
+      <legend>Feedback & Additional Information</legend>
+
+      <p>
+        <label for="about"> Tell us about yourself: <br></label> 
+        <textarea id="about" name="about" rows="3" placeholder="Write a brief description about yourself..." ></textarea>
+      </p>
+
+      <p>
+        <label for="suggestions">Suggestions for improvement:<br></label>
+        <input type="text" id="suggestions" name="suggestions" rows="6" col="1" placeholder="Any suggestions or feedback" />
+      </p>
+
+      <p>
+        <label for="resume">Upload Resume:</label>
+  <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" /> <br>
+      <br>
+ <label><input type="checkbox"  /> Subscribe to our Newsletter</label>
+  <label><input type="checkbox"  /> I agree to the Terms and Conditions</label>
+  <label><input type="checkbox"  /> I agree to the Privacy Policy</label>
+
+  
+</fieldset>
+</form>
+<p>
+   <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+</p>
+  
+  </footer>
+</body>
+
+</html>

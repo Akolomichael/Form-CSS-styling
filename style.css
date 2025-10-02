@@ -1,0 +1,254 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #f9fafb;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+form {
+justify-content: center;
+  max-width: 600px;
+  width: 100%;
+  background: #ffffff;
+  margin: 40px auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #1e40af;
+  margin-bottom: 20px;
+}
+
+/* ---------------------------
+   Fieldset & Legend
+---------------------------- */
+fieldset {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 1.2rem;
+  background: #f9fafb;
+}
+
+legend {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2563eb;
+  padding: 0 8px;
+}
+
+/* ---------------------------
+   Labels & Inputs
+---------------------------- */
+label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #1f2937;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+input[type="time"],
+input[type="month"],
+input[type="week"],
+input[type="search"],
+input[type="color"],
+input[type="file"],
+input[type="range"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #1f2937;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #6b7280;
+  font-style: italic;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+  outline: none;
+}
+
+/* ---------------------------
+   Checkboxes & Radios
+---------------------------- */
+input[type="checkbox"],
+input[type="radio"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+label input[type="checkbox"],
+label input[type="radio"] {
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+/* ---------------------------
+   Range & Color
+---------------------------- */
+input[type="range"] {
+  height: 6px;
+  background: #d1d5db;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #2563eb;
+  cursor: pointer;
+}
+
+input[type="color"] {
+  height: 44px;
+  padding: 2px;
+}
+
+/* ---------------------------
+   Buttons
+---------------------------- */
+
+/* ---------------------------
+   Buttons
+---------------------------- */
+button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 8px 5px 0 0;
+  min-width: 120px;
+}
+
+/* Primary Submit Button */
+button[type="submit"] {
+  background-color: #2563eb; /* Primary Blue */
+  color: #ffffff;
+}
+
+button[type="submit"]:hover {
+  background-color: #1e40af; /* Primary Dark */
+}
+
+button[type="submit"]:active {
+  background-color: #3b82f6; /* Primary Light */
+  transform: scale(0.98);
+}
+
+/* Secondary Reset Button */
+button[type="reset"] {
+  background-color: #6b7280; /* Neutral gray */
+  color: #ffffff;
+}
+
+button[type="reset"]:hover {
+  background-color: #4b5563; /* Darker gray */
+}
+
+button[type="reset"]:active {
+  background-color: #374151; /* Almost black */
+  transform: scale(0.98);
+}
+
+/* Accent Button (Purple or Pink) */
+.btn-accent {
+  background-color: #8b5cf6; /* Accent Purple */
+  color: #ffffff;
+}
+
+.btn-accent:hover {
+  background-color: #7c3aed; /* Darker purple */
+}
+
+.btn-accent:active {
+  background-color: #6d28d9; /* Pressed purple */
+  transform: scale(0.98);
+}
+
+/* Alternate Accent (Pink version) */
+.btn-accent-pink {
+  background-color: #ec4899; /* Accent Pink */
+  color: #ffffff;
+}
+
+.btn-accent-pink:hover {
+  background-color: #db2777; /* Darker Pink */
+}
+
+.btn-accent-pink:active {
+  background-color: #be185d; /* Pressed Pink */
+  transform: scale(0.98);
+}
+
+/* Disabled State */
+button:disabled,
+.btn-accent:disabled,
+.btn-accent-pink:disabled {
+  background-color: #d1d5db;
+  color: #6b7280;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+
+/* ---------------------------
+   Responsive
+---------------------------- */
+@media (max-width: 640px) {
+  form {
+    padding: 1rem;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
